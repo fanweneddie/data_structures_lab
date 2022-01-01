@@ -1,0 +1,7 @@
+6 is out.
+1 is out.
+4 is out.
+7 is out.
+2 is out.
+3 is out.
+the winner is 5

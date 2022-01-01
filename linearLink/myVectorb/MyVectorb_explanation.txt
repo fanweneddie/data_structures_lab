@@ -1,0 +1,91 @@
+EXPLANATION of the Myvectorb
+Myvectorb is a simple edition of STL vector, having the traits below
+    1.
+    2.
+    3.
+It also has many functions:
+
+1. its random iterator called MyIterator
+    
+    MyIterator(T *pt)
+
+    MyIterator(const MyIterator &it)
+
+    T *get_ptr() const
+
+    MyIterator &operator=(const MyIterator &it)
+
+    bool operator==(const MyIterator &it)
+
+    bool operator!=(const MyIterator &it)
+
+    MyIterator &operator++()
+
+    MyIterator operator++(int)
+
+    MyIterator &operator--()
+
+    MyIterator operator--(int)
+
+    T& operator*()
+
+
+2.its main methods
+    
+    (1). constructors or reassignment
+    
+    MyVectorb(int vlen = DEFAULT_LEN)
+
+    MyVectorb(int vlen, T inputData)
+
+    MyVectorb(T* inputHead)
+
+    MyVectorb& operator=(const MyVectorb &mv)
+
+    
+    (2). adjusting memory space or length.
+    
+    void expand_memory()
+
+    void resize(int newSize)
+
+    
+    (3). getting the element or iterator of the position
+    
+    MyIterator begin() const
+
+    MyIterator end() const
+
+    T &operator[](int itemOrder) const
+
+    T get_front() const
+
+    T get_back() const
+
+
+    (4) getting the head, memory size and length
+    
+    T* get_head() const
+
+    int get_memSize() const
+
+    int get_len() const
+
+
+    (5) insert and delete , push_back and pop_back
+
+    // insert
+    //delete
+    
+    void push_back(const T &inputItem)
+
+    void pop_back()
+
+
+    (6) find
+
+
+    (7) sort
+
+
+~MyVectorb()
